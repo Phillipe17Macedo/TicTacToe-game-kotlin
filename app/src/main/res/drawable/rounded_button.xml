@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#04B2D9"/> <!-- Cor de fundo dos botões -->
+    <corners android:radius="16dp"/> <!-- Bordas arredondadas -->
+    <padding android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="8dp" />
+    <shadow android:elevation="8dp" android:color="#011640"/>
+</shape>

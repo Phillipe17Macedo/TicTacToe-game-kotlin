@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TicTacToeButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:background">@drawable/rounded_button</item> <!-- Borda arredondada -->
+        <item name="android:textColor">#F27C38</item> <!-- Cor padrão do texto -->
+        <item name="android:elevation">8dp</item> <!-- Sombra para o botão -->
+    </style>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011640"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jogador 1: X"
+        android:textSize="24sp"
+        android:textColor="#079DD9"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tabuleiro do jogo -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:rowCount="3"
+        android:columnCount="3"
+        app:layout_constraintTop_toBottomOf="@id/tvStatus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnReset"
+        app:layout_constraintHeight_percent="0.6"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp">
+
+        <!-- Células do Jogo -->
+        <Button android:id="@+id/btn0" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/btn1" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/btn2" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/btn3" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/btn4" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/btn5" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/btn6" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/btn7" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/btn8" style="@style/TicTacToeButton" />
+
+    </GridLayout>
+
+    <!-- Botão de Reiniciar -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Reiniciar Jogo"
+        android:textColor="#079DD9"
+        android:background="#011640"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
